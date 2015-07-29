@@ -13,11 +13,14 @@
 
 ActiveRecord::Schema.define(version: 20150723144341) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "orders", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.string   "middle",     limit: 255
-    t.string   "surname",    limit: 255
-    t.string   "product",    limit: 255
+    t.string   "name"
+    t.string   "middle"
+    t.string   "surname"
+    t.string   "product"
     t.integer  "count"
     t.integer  "check"
     t.datetime "created_at"

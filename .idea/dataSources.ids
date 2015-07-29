@@ -75,4 +75,7 @@
       <column name="seq" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
     </table>
   </data-source>
+  <data-source name="Rails pelmen: test" uuid="d293ee41-1445-4032-8d4f-1af595b3aa81">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
