@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Middle: MyString
+  Surname: MyString
+  Product: MyString
+  Count: 1
+  Check: 1
+
+two:
+  Name: MyString
+  Middle: MyString
+  Surname: MyString
+  Product: MyString
+  Count: 1
+  Check: 1

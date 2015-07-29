@@ -1,0 +1,25 @@
+<div class="row">
+  <h1 class="col-md-5 col-md-offset-2">Новый заказ</h1>
+</div>
+<%= bootstrap_form_for(:order,layout: :horizontal, label_col: "col-md-2", control_col: "col-md-5", url:order_index_path) do |f| %>
+    <div>
+      <%=f.text_field :name, :label => 'Имя'%>
+    </div>
+    <div>
+      <%=f.text_field :middle, :label =>'Отчество' %>
+    </div>
+    <div>
+      <%=f.text_field :surname, :label => 'Фамилия' %>
+    </div>
+    <div>
+      <%=f.select :product, options_for_select([['Пельмени'],['Манты'],['Мясо'], ['Колбаски']]), :label => 'Продукт' %>
+    </div>
+    <div>
+      <%=f.text_field :count, :label => 'Количество', append: "кг" %>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-md-offset-6">
+        <%=f.submit 'Заказать', class: "btn btn-success btn-block" %>
+      </div>
+    </div>
+  <% end %>
